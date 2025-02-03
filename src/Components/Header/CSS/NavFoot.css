@@ -1,0 +1,115 @@
+/* ========= All Category ========= */
+.allCategory{
+   display: flex;
+   border: 1px solid transparent;
+   border-radius: 2px;
+   margin-left: 0.6875rem;
+   padding: 0.5rem 0.5rem;
+   justify-content: space-between;
+   align-items: center;
+   background-color: transparent;
+   color: white;
+   height: 39px;
+}
+.allCategory:hover{
+   border: 1px solid white;
+   cursor: pointer;
+}
+/* == 1 == */
+.bars{
+   display: inline-block;
+   width: 17px;
+   height: 14px;
+}
+/* == 2 == */
+.bar{
+   width: 17px;
+   height: 2px;
+   background-color: white;
+   margin-bottom: 0.25rem;
+}
+/* == 3 == */
+.allText{
+   font-size: 0.875rem;
+   padding-left: 0.3125rem;
+}
+/* == 4 == */
+.today-s-DealsButton{
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   border: 1px solid transparent;
+   box-shadow: none;
+   border-radius: 2px;
+   margin: 0.3125rem 0 0.375rem;
+   padding: 0rem 0.5rem;
+   font-size: 0.875rem;
+   height: 39px;
+}
+.today-s-DealsButton:hover{
+   border: 1px solid white;
+}
+/* == 5 == */
+.customerServiceButton{
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   border: 1px solid transparent;
+   box-shadow: none;
+   border-radius: 2px;
+   margin: 0.3125rem 0 0.375rem;
+   padding: 0rem 0.5rem;
+   font-size: 0.875rem;
+   height: 39px;
+}
+.customerServiceButton:hover{
+   border: 1px solid white;
+}
+/* == 6 == */
+.registryButton{
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   border: 1px solid transparent;
+   box-shadow: none;
+   border-radius: 2px;
+   margin: 0.3125rem 0 0.375rem;
+   padding: 0rem 0.5rem;
+   font-size: 0.875rem;
+   height: 39px;
+}
+.registryButton:hover{
+   border: 1px solid white;
+}
+/* == 7 == */
+.giftCardsButton{
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   border: 1px solid transparent;
+   box-shadow: none;
+   border-radius: 2px;
+   margin: 0.3125rem 0 0.375rem;
+   padding: 0rem 0.5rem;
+   font-size: 0.875rem;
+   height: 39px;
+}
+.giftCardsButton:hover{
+   border: 1px solid white;
+}
+/* == 8 == */
+.sellButton{
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+   border: 1px solid transparent;
+   box-shadow: none;
+   border-radius: 2px;
+   margin: 0.3125rem 0 0.375rem;
+   padding: 0rem 0.5rem;
+   font-size: 0.875rem;
+   height: 39px;
+}
+.sellButton:hover{
+   border: 1px solid white;
+}

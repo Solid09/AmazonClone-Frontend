@@ -1,0 +1,28 @@
+/* ========= Auth Page - Foot ========= */
+.signInPage-foot {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+ .signInPage-foot-divider {
+   height: 2px;
+   width: 100vw;
+   background: linear-gradient(
+     to right,
+     rgba(0, 0, 0, 0),
+     rgba(87, 87, 87, 0.144) 50%,
+     rgba(0, 0, 0, 0)
+   );
+   margin: 0 0 35px 0;
+ }
+ .signInPage-foot-usefullLinks a {
+   font-size: 11px;
+   color: #0066c0;
+   text-decoration: none;
+ }
+ 
+ .signInPage-foot-usefullLinks a:hover {
+   text-decoration: underline;
+   color: rgb(202, 131, 0);
+ }
+ 

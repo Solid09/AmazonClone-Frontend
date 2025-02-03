@@ -1,0 +1,197 @@
+/* ========= Sign In Page ========= */
+.signInPage,
+.signInPagePass {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+/* ========= Sign In Page Error LogginIn UI ========= */
+.signInPagePass-errorSigningIn{
+  border-radius: 10px;
+  border: 1px solid #c40000;
+  color: #c40000;
+  width: 348px;
+  margin: 5px 0 15px;
+  font-size: 30px;
+  display: flex;
+}
+.signInPagePass-errorSigningIn-exCarrier{
+  margin: 15px 20px 20px 20px;
+}
+.signInPagePass-errorSigningIn-h3{
+  display: inline-block;
+  font-size: 17px;
+  font-weight: normal;
+  margin: 15px 0 10px 0;
+}
+.signInPagePass-errorSigningIn-p{
+  font-size: 13px;
+  color: black;
+  margin: 0 0 2px;
+}
+
+.signInFormBorder {
+  border: 1px solid rgba(128, 128, 128, 0.219);
+  border-radius: 10px;
+}
+.signInFormContainer {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 348px;
+}
+.signIn-correctEmailInput,
+.signIn-passwordInput,
+.signIn-wrongEmailInput,
+.signIn-wrongPasswordInput {
+  width: 100%;
+  height: 31px;
+  border-radius: 3px;
+  padding: 3px 7px;
+  font-size: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  box-sizing: border-box;
+}
+.signIn-correctEmailInput:focus,
+.signIn-passwordInput:focus {
+  box-shadow: none;
+  border: 1px solid rgba(100, 100, 100, 0.384);
+  outline: 2px solid rgba(5, 219, 219, 0.308);
+}
+.signIn-wrongEmailInput,
+.signIn-wrongPasswordInput {
+  border: 2px solid red !important;
+}
+.signIn-wrongEmailInput:focus,
+.signIn-wrongPasswordInput:focus {
+  outline: 2px solid rgba(219, 5, 5, 0.308);
+}
+
+/* ========= Sign In Continue Button ========= */
+.signIn-Continue,
+.signIn-SignIn {
+  font-size: 13px;
+  text-decoration: none;
+  width: 100%;
+  height: 30px;
+  color: black;
+  background-color: rgb(231, 208, 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  cursor: pointer;
+  border: none;
+}
+.signIn-Continue:hover,
+.signIn-SignIn:hover {
+  background-color: rgb(218, 196, 3);
+}
+
+/* ========= Need Help Container ========= */
+.signIn-needHelpContainer {
+  margin: 20px 0;
+}
+.signIn-needHelpContainer button {
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  color: #0066c0;
+  cursor: pointer;
+  text-align: left;
+}
+.signIn-needHelpContainer button:hover {
+  text-decoration: underline;
+  color: rgb(202, 131, 0);
+}
+.signIn-needHelpContainer a,
+.amazonBussinessLink-a,
+.signInPass-recoverPass,
+.signInPass-changeEmail,
+.signInPass-detailsInfo {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: 13px;
+}
+.signIn-needHelpContainer a:hover,
+.amazonBussinessLink-a:hover,
+.signInPass-recoverPass:hover,
+.signInPass-changeEmail:hover,
+.signInPass-detailsInfo:hover {
+  text-decoration: underline;
+  color: rgb(202, 131, 0);
+}
+.signIn-needHelp-arrowRight::before {
+  content: "";
+  position: relative;
+  border: 4px solid transparent;
+  border-top: 4px solid gray;
+  transform: rotate(-90deg);
+  top: -1px;
+  right: 10px;
+  display: inline-block;
+}
+.signIn-needHelp-arrowBottom::before {
+  content: "";
+  position: relative;
+  border: 4px solid transparent;
+  border-top: 4px solid gray;
+  top: 10px;
+  right: 10px;
+}
+
+/* ========= SignIn - Sign Up Link ========= */
+.signIn-signUpLink {
+  width: 348px;
+  text-align: center;
+}
+.signIn-signUpLink-text {
+  color: #767676;
+  font-size: 12px;
+  display: inline-block;
+}
+.signIn-signUpLink-menuDivider {
+  height: 1px;
+  width: 33%;
+  background-color: rgba(128, 128, 128, 0.185);
+}
+.signIn-signUpLink-a {
+  margin: 0 0 30px 0;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.219);
+  height: 31px;
+  font-size: 14px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.219);
+}
+.signIn-signUpLink-a:hover {
+  background-color: rgba(0, 83, 83, 0.04);
+}
+
+/* ========= Sign In Page 2nd Form ========= */
+.signInPass-detailsInfo::after {
+  content: "";
+  position: relative;
+  border: 4px solid transparent;
+  border-top: 4px solid gray;
+  top: 11px;
+  left: 8px;
+}
+
+/* ====== Misc. ====== */
+.signIn-emptyPassErrorText {
+  font-size: 12px;
+  color: #c40000;
+  margin: 0 0 0 5px;
+}

@@ -1,0 +1,54 @@
+.bottomProductCard{
+   padding: 0 40px 0 0;
+   max-width: 165px;
+}
+
+.productImgLink{
+   text-decoration: none;
+}
+.productImgLink img{
+   width: auto;
+   height: 165px;
+   display: block;
+}
+
+.productNameLink, .productAuthorName{
+   text-decoration: none;
+   color:#007185;
+   font-size: 14px;
+   overflow-wrap: break-word;
+}
+.productNameLink span{
+   display: block;
+}
+.productNameLink:hover, .productAuthorName:hover, .totalProductRating:hover{
+   color: rgb(255, 166, 0);
+}
+.productAuthorName{
+   font-size: 12px;
+   display: block;
+   max-width: 100%;
+   overflow-wrap: break-word;
+}
+
+.totalProductRating{
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   color: #007185;
+   font-size: 12px;
+}
+.totalProductRating .ratingStars{
+   color: darkorange;
+   font-size: 14px;
+   margin-right: 2px;
+}
+
+.productPrice, .productShippingPrice{
+   text-decoration: none;
+   color: #0F1111;
+}
+.productShippingPrice{
+   font-size: 12px;
+}

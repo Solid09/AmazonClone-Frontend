@@ -1,0 +1,32 @@
+.topOfFoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem 0 2.5rem;
+  background-color: #232f3e;
+}
+
+.header {
+  font-size: 1rem;
+  display: block;
+  font-weight: bolder;
+  color: white;
+  margin: 0.375rem 0 0.875rem !important;
+  line-height: 1.0625rem;
+}
+
+.topOfFoot a {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.625rem;
+  line-height: 1.125rem;
+}
+
+.topOfFoot a:hover {
+  text-decoration: underline;
+  text-decoration-color: #dddddd;
+  cursor: pointer;
+}

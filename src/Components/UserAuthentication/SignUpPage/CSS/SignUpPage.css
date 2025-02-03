@@ -1,0 +1,101 @@
+/* ========= Sign Up Page ========= */
+.signUpPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.signUpFormBorder {
+  border: 1px solid rgba(128, 128, 128, 0.219);
+  border-radius: 10px;
+}
+.signUpFormContainer {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 348px;
+}
+
+/* ========= Sign Up Page-Input ========= */
+.signUp-correctName,
+.signUp-correctEmail,
+.signUp-correctPass,
+.signUp-wrongEmail,
+.signUp-wrongName,
+.signUp-wrongPass,
+.signUp-correctREPass,
+.signUp-wrongREPass {
+  width: 100%;
+  height: 31px;
+  border-radius: 3px;
+  padding: 3px 7px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  box-sizing: border-box;
+}
+.signUp-correctName:focus,
+.signUp-correctEmail:focus,
+.signUp-correctPass:focus,
+.signUp-wrongEmail:focus,
+.signUp-wrongName:focus,
+.signUp-wrongPass:focus,
+.signUp-correctREPass:focus,
+.signUp-wrongREPass:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.438);
+  outline: 2px solid rgba(5, 219, 219, 0.308);
+}
+.signUp-wrongEmail,
+.signUp-wrongName,
+.signUp-wrongPass,
+.signUp-wrongREPass {
+  border: 2px solid red !important;
+}
+.signUp-wrongEmail:focus,
+.signUp-wrongName:focus,
+.signUp-wrongPass:focus,
+.signUp-wrongREPass:focus {
+  outline: 2px solid rgba(219, 5, 5, 0.308);
+}
+
+/* ========= Sign Up Continue Button ========= */
+.signUp-Continue {
+  font-size: 13px;
+  text-decoration: none;
+  width: 100%;
+  height: 30px;
+  color: black;
+  background-color: rgb(231, 208, 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 15px 0 20px 0;
+  cursor: pointer;
+  border: none;
+}
+.signUp-Continue:hover {
+  background-color: rgb(218, 196, 3);
+}
+
+/* ========= Sign In Link ========= */
+.signUpPage-signInLink {
+  color: #0066c0;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0 0 0 5px;
+}
+.signUpPage-signInLink:hover {
+  color: rgb(202, 131, 0);
+  text-decoration: underline;
+}
+.signUpPage-signInLink::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  border: 3px solid transparent;
+  border-top: 3px solid #0066c0;
+  transform: rotate(-90deg);
+  margin: 0 0 1px 5px;
+}

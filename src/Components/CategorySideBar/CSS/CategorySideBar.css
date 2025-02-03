@@ -1,0 +1,281 @@
+.categorySideBar {
+  height: 100vh;
+  width: 100vw; 
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+}
+
+/* ========= Full Side Bar Stuff ========= */
+.fullSideBar {
+  height: 100%;
+  width: auto;
+  transform: translateX(0rem); 
+  animation: popAnim 0.3s;
+  position: absolute;
+  z-index: 2;
+}
+
+.fullSideBarPush {
+  height: 100%;
+  width: auto;
+  transform: translateX(-25rem);
+  animation: pushAnim 0.35s;
+  position: absolute;
+  z-index: 2;
+}
+
+@keyframes popAnim {
+  from {
+    transform: translateX(-25rem);
+  }
+  to {
+    transform: translateX(0rem); 
+  }
+}
+
+@keyframes pushAnim {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(-25rem); 
+  }
+}
+
+/* ========= Empty Space Stuff ========= */
+.emptySpace {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  background-color: #000000b7;
+  animation: bgColorFadeIn 0.3s;
+}
+
+.emptySpacePush {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  background-color: #000000b7;
+  animation: bgColorFadeOut 0.3s;
+}
+
+@keyframes bgColorFadeIn {
+  from {
+    background-color: #00000000;
+  }
+  to {
+    background-color: #000000b7;
+  }
+}
+
+@keyframes bgColorFadeOut {
+  from {
+    background-color: #000000b7;
+  }
+  to {
+    background-color: #00000000;
+  }
+}
+
+/* ========= Side Bar W/O Header ========= */
+.sideBar {
+  width: 22.8125rem;
+  height: 100%;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  overflow-y: auto;
+  top: 3.125rem;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 7px 0 85px;
+}
+
+/* ========= Profile Container / Header ========= */
+.profileContainer {
+  background-color: #232f3e;
+  height: 3.125rem;
+  font-size: 1.1875rem;
+  cursor: pointer;
+  display: block;
+  width: 22.8125rem; 
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.profileText {
+  line-height: 1.4375rem; 
+}
+
+.profileImg {
+  width: 1.6875rem;
+  height: 1.5625rem; 
+  margin: 0 0.625rem 0 2.25rem; 
+}
+
+/* ========= Back Button ========= */
+.backButton {
+  background-color: transparent;
+  position: relative;
+  width: 1.25rem; 
+  height: 1.25rem; 
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  left: 23.75rem;
+  top: 1.3125rem; 
+  border: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.closeSymbol {
+  color: white;
+  font-size: 1.5625rem; 
+  padding: 0;
+  margin: 0;
+  border: none;
+  line-height: 1.25rem;
+}
+
+/* ========= Digital Content & Devices ========= */
+.digitalContentDevices {
+  color: black;
+  max-width: 100%;
+}
+
+/* ========= Shop By Department ========= */
+.shopByDepartment {
+  max-width: 100%;
+}
+
+/* ========= Programs & Features ========= */
+.programsFeatures {
+  max-width: 100%;
+}
+
+/* ========= Help & Settings ========= */
+.helpSettings {
+  max-width: 100%;
+}
+
+/* ========= Misc. ========= */
+/* ========= Btns ========= */
+.button {
+  background-color: transparent;
+  color: black;
+  font-size: 0.875rem; 
+  box-shadow: none;
+  border: transparent;
+  cursor: pointer;
+  display: flex;
+  padding: 0.8125rem 1.25rem 0.8125rem 2.25rem;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.164);
+}
+
+.expandArrow {
+  content: "";
+  height: 0.4375rem; 
+  width: 0.4375rem;
+  border-top: 0.125rem solid rgba(0, 0, 0, 0.52);
+  border-right: 0.125rem solid rgba(0, 0, 0, 0.52); 
+  transform: rotate(45deg);
+}
+
+.button:hover .expandArrow {
+  border-top: 0.125rem solid black; 
+  border-right: 0.125rem solid black; 
+}
+
+/* ========= See All Btns ========= */
+.seeAllButton {
+  background-color: transparent;
+  color: black;
+  font-size: 0.875rem;
+  box-shadow: none;
+  border: transparent;
+  cursor: pointer;
+  display: flex;
+  padding: 0.8125rem 1.25rem 0.8125rem 2.25rem;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  justify-content: left;
+  align-items: center;
+}
+
+.seeAllButton:hover {
+  background-color: rgba(0, 0, 0, 0.164);
+}
+
+.bellowExpandArrow {
+  content: "";
+  height: 0.4375rem;
+  width: 0.4375rem;
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.52); 
+  border-left: 0.125rem solid rgba(0, 0, 0, 0.52);
+  transform: rotate(-45deg);
+  margin: 0 0 0.375rem 0.625rem; 
+}
+
+.seeAllButton:hover .bellowExpandArrow {
+  border-bottom: 0.125rem solid black;
+  border-left: 0.125rem solid black;
+}
+
+.sideBarHeading {
+  color: black;
+  font-size: 1.125rem !important;
+  max-width: 100%;
+  padding: 0.8125rem 1.25rem 0.3125rem 2.25rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.sideBarlink {
+  color: black;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: block;
+  padding: 0.8125rem 1.25rem 0.8125rem 2.25rem;
+  max-width: 100%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.sideBarlink:hover {
+  background-color: rgba(0, 0, 0, 0.092);
+}
+
+.menuDivider {
+  height: 0.0625rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.172);
+  margin: 0.3125rem 0;
+}
+
+.languageFlagImg {
+  width: 1.125rem;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+}

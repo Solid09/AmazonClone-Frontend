@@ -1,0 +1,92 @@
+/* ========= Unordered Products List ========= */
+.unorderedListContainer {
+  padding: 10px 20px;
+  margin: 0 20px 20px 20px;
+  background-color: white;
+}
+.unorderedList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 7px 0;
+  margin: 0;
+  overflow-x: auto;
+  position: relative;
+}
+.unorderedList::-webkit-scrollbar {
+  display: block;
+  height: 6px;
+  scrollbar-width: 20px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+.unorderedList:hover::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 5px;
+  display: block;
+  scrollbar-width: 20px;
+  height: 6px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+.unorderedList:hover::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(100, 100, 100);
+}
+.unorderedList img {
+  height: 200px;
+  display: block;
+  width: auto;
+  margin-right: 5px;
+}
+
+/* ==== Unordered Products List Btns ==== */
+.ul-productBackwardBtn {
+  position: absolute;
+  left: 0;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  top: 25%;
+  width: 45px;
+  height: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.ul-productBackwardBtn::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  transform: rotate(-45deg);
+  top: 40%;
+  left: 35%;
+  border-radius: 2px;
+}
+.ul-productForwardBtn {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  top: 25%;
+  width: 45px;
+  height: 100px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
+.ul-productForwardBtn::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  transform: rotate(45deg);
+  top: 40%;
+  right: 35%;
+  border-radius: 2px;
+}

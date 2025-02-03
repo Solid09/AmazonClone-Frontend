@@ -1,0 +1,52 @@
+.bottomFoot {
+   background-color: #131A22;
+   padding: 1.875rem 0 0.3125rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   width: 62.5rem;
+}
+
+.bottomFoot a {
+   text-decoration: transparent;
+}
+
+.bottomFoot a:hover .mainText {
+   text-decoration: underline;
+   text-decoration-color: #DDDDDD;
+}
+
+.bottomFoot a:hover .subText {
+   text-decoration: underline;
+   text-decoration-color: #999999;
+}
+
+.cells {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.mainText {
+   font-size: 0.75rem;
+   color: #DDDDDD;
+   line-height: 0.9375rem;
+   margin: 0;
+   padding: 0;
+   display: block;
+}
+
+.subText {
+   font-size: 0.75rem;
+   color: #999999;
+   margin: 0;
+   padding: 0;
+   display: block;
+   line-height: 0.8125rem;
+}

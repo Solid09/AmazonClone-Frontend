@@ -1,0 +1,31 @@
+.middleFoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232f3e;
+  height: 4.875rem;
+  padding-bottom: 1.875rem;
+}
+.amazonLogoMiddle {
+  width: 82px;
+  height: 28px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.threeItems{
+   display: flex;
+   margin: 0 0 0 4.375rem;
+}
+.threeItems a{
+   text-decoration: none;
+   border-radius: 2px;
+   border: 1px solid #929292;
+   color: #CCCCCC;
+   padding: 0.375rem 1.125rem 0.375rem 0.5rem;
+   border-width: thin;
+   margin-right: 0.313rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.813rem;
+}

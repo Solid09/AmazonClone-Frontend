@@ -1,0 +1,11 @@
+/* ========= Sign In Permissions Texts ========= */
+.authPage-permissionText {
+  font-size: 12px;
+  width: 100%;
+}
+.authPage-permissionText-Links {
+  color: #0066c0;
+}
+.authPage-permissionText-Links:hover {
+  color: rgb(202, 131, 0);
+}

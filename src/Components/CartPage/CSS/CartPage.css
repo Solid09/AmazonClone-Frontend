@@ -1,0 +1,23 @@
+.cartPageContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.cartPage {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 36px;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1500px;
+}
+.cartPage-link {
+  font-size: 14px;
+  color: #007185;
+  text-decoration: none;
+}
+.cartPage-link:hover {
+  color: rgb(255, 166, 0);
+  text-decoration: underline;
+}

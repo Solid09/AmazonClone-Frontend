@@ -1,0 +1,120 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.bgImgContainer {
+  width: 100%;
+  height: 250px;
+}
+
+.mainPage-topTwoProductCardsListGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+}
+.mainPage-topTwoProductCardsListGrid-extraCard {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  .mainPage-topTwoProductCardsListGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 20px 20px 20px;
+    gap: 20px;
+  }
+  .mainPage-topTwoProductCardsListGrid-extraCard {
+    display: block;
+  }
+  .mainPage-ProductCardsListGrid-extraCard {
+    display: none;
+  }
+  .mainPage-singleRowProductCardsList{
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+
+.mainPage-singleRowProductCardsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 20px 20px 20px;
+  max-width: 1500px;
+  gap: 20px;
+}
+/* ========= BackGround Image ========= */
+.bgImg {
+  width: 1500px;
+  position: relative;
+}
+
+.bgImgGradient {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 250px;
+  background-image: linear-gradient(to top, #d8d7d7, transparent);
+  z-index: -1;
+}
+
+.bgImg_img {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: -2;
+  object-fit: cover;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bgImg_btns {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.imgForwardBtn,
+.imgBackBtn {
+  border: transparent;
+  width: 84px;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.imgForwardBtn::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotate(-45deg);
+  top: 45%;
+  right: 25%;
+}
+.imgBackBtn::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotate(135deg);
+  top: 45%;
+  left: 25%;
+}
+.imgForwardBtn:focus,
+.imgBackBtn:focus {
+  border: 2px solid rgb(82, 140, 191);
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px white;
+}

@@ -1,0 +1,13 @@
+/* ========= Amazon Bussiness Link ========= */
+.amazonBussinessLink {
+   margin-top: 10px;
+ }
+.amazonBussinessLink-a{
+  text-decoration: none;
+  color: #0066c0;
+  font-size: 13px;
+}
+.amazonBussinessLink-a:hover {
+  text-decoration: underline;
+  color: rgb(202, 131, 0);
+}

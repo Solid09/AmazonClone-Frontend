@@ -1,0 +1,6 @@
+/* ========= Sign In Menu Divider ========= */
+.authPage-menuDivider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(192, 192, 192, 0.342);
+}
