@@ -22,7 +22,7 @@ function useFetchProductData() {
     if (data) {
       productData.current = getCategoriesData();
     } else {
-      console.log("Not yet loaded!");
+      //Empty data
     }
   }, [data]);
 

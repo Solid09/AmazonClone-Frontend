@@ -7,11 +7,11 @@ import product_placeholder_img from "../Assets/productsPlaceHolderImg.jpg";
 function CartPageRightContainer(props) {
   const addProductToCart = () => {  //for now placeholder data. else just access the data from the db of the clicked product and pass
     const item = {
-      id: props.cartItems.length + 1,
       name: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae at voluptas repudiandae aperiam, cumque",
-      amountBought: 1000,
-      isInStock: true,
-      price: "$9.99",
+      quantity: 1000,
+      inStock: true,
+      price: 9.99,
+      isGift: false,
     };
     props.addItemsToCart(item);
   };
@@ -114,7 +114,7 @@ function CartPageRightContainer(props) {
                       <br />
                     </a>
                     <a href="#" style={{ textDecoration: "none" }}>
-                      <span className="rightSideBar_productSuggestions-reviewsText">
+                      <span className="-rerightSideBar_productSuggestionsviewsText">
                         {Array(5)
                           .fill()
                           .map((_, index) => (

@@ -11,26 +11,32 @@ import "./CSS/CartPage.css";
 
 import CartContainer from "./subComponents/CartContainer.jsx";
 import CartPageRightContainer from "./subComponents/CartPageRightContainer.jsx";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function CartPage() {
   const [cartItems, setCartItems] = useState([]);
+  const authState = useSelector((state) => state.auth);
+  const navigate = useNavigate();
 
   const addItemsToCart = async (item) => {
-    setCartItems(cartItems.concat(item));
-    await axios.post("http://localhost:5000/api/cart", { cartItem: item }, {withCredentials: true});
+    const response = await axios.post("https://localhost:3000/api/cart/", { cartItem: item }, {withCredentials: true});
+    setCartItems(cartItems.concat(response.data.cartItem));
   };
 
   const removeCartItem = async (itemId) => {
-    const updatedCart = cartItems.filter((item) => item.id !== itemId);
-    setCartItems(updatedCart);
-    await axios.delete(`http://localhost:5000/api/cart/:${itemId}`, {withCredentials: true});
+    await axios.delete(`https://localhost:3000/api/cart/${itemId}`, {withCredentials: true});
+    const updatedCartItems = cartItems.filter((item) => item._id !== itemId);
+    setCartItems(updatedCartItems);
   };
 
   useEffect(() => {
     document.title = "Amazon.com Shopping Cart";
+    if(!authState.authorization){
+      navigate("/signin-email");
+    }
     const fetchCartItems = async () => {
       const response = await axios.get("https://localhost:3000/api/cart", {withCredentials: true});
-      console.log(response.data.message);
       setCartItems(response.data.cart);
     };
     fetchCartItems();
@@ -43,13 +49,13 @@ function CartPage() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="cartPage">
           <CartContainer
-            isSignedIn={false}
+            isSignedIn={authState.authorization}
             cartItems={cartItems}
             removeCartItem={removeCartItem}
           />
 
           <CartPageRightContainer
-            isSignedIn={false}
+            isSignedIn={authState.authorization}
             cartItems={cartItems}
             addItemsToCart={addItemsToCart}
           />

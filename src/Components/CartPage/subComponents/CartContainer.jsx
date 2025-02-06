@@ -41,7 +41,7 @@ function CartContainer(props) {
                 <div className="itemsContainer">
                   {props.cartItems.map((item) => {
                     return (
-                      <>
+                      <div key={item._id}>
                         <MenuDivider />
                         <div
                           style={{
@@ -69,11 +69,11 @@ function CartContainer(props) {
                             </span>
 
                             <span className="items-infoDiv-amountBought">
-                              {roundOffProductAmountBought(item.amountBought)} bought in past month
+                              {roundOffProductAmountBought(item.quantity)} bought in past month
                             </span>
 
                             <span className="items-infoDiv-stockText">
-                              {item.isInStock ? "In Stock" : "Out of Stock"}
+                              {item.inStock ? "In Stock" : "Out of Stock"}
                             </span>
 
                             <div className="items-infoDiv-productIsAGift">
@@ -86,7 +86,7 @@ function CartContainer(props) {
                                 Qty: 1
                               </button>
                               {verticalMenuDivider()}
-                              <button className="items-infoDiv-actionsDiv-optionBtns" onClick={()=>props.removeCartItem(item.id)}>Delete</button>
+                              <button className="items-infoDiv-actionsDiv-optionBtns" onClick={()=>props.removeCartItem(item._id)}>Delete</button>
 
                               {verticalMenuDivider()}
                               <button className="items-infoDiv-actionsDiv-optionBtns">Save for later</button>
@@ -100,10 +100,10 @@ function CartContainer(props) {
                           </div>
 
                           <div className="items-priceContainer">
-                            <span>{item.price}</span>
+                            <span>{item.price.$numberDecimal}</span>
                           </div>
                         </div>
-                      </>
+                      </div>
                     );
                   })}
                 </div>
