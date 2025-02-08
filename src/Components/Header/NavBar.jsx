@@ -1,5 +1,5 @@
 import "./CSS/NavBar.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../Redux/reducers/authReducers";
 import axios from "axios";
 
@@ -11,12 +11,18 @@ import { useState } from "react";
 
 function Navbar(props) {
   const dispatch = useDispatch();
+  const isSignedIn = useSelector((state) => state.auth.authorization);
 
   const [isAuthBtnHover, setIsAuthBtnHover] = useState(false);
 
   const onLogoutBtnClick = async () =>{
     dispatch(logout());
     await axios.post('/api/auth/logout', {}, {withCredentials: true});
+  }
+
+  const userName = async () =>{
+    const response  = await axios('/api/user/me', {withCredentials: true});
+    return response.data.user.fullName;
   }
 
   return (
@@ -47,7 +53,7 @@ function Navbar(props) {
 
         <Link className="authButton" to="/signin-email">
           <p>
-            Hello, TODO
+            {!isSignedIn ? "Hello, Sign in" : `Welcome, ${userName()}`}
             <br />
             <b style={{ fontSize: "0.875rem" }}>Account &amp; Lists</b>
           </p>
