@@ -22,12 +22,6 @@ This is the frontend of a full-stack Amazon Clone built using **React** and **Re
 - Axios
 - TailwindCSS (or whatever styling method you used)
 
-## 📸 Screenshots
-
-| Home Page | Product Page | Cart | Checkout |
-|-----------|---------------|------|----------|
-| *Add screenshots here later* | | | |
-
 ## 🧑‍💻 Local Development
 
 ```bash
