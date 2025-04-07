@@ -20,7 +20,6 @@ This is the frontend of a full-stack Amazon Clone built using **React** and **Re
 - Redux
 - React Router
 - Axios
-- TailwindCSS (or whatever styling method you used)
 
 ## 🧑‍💻 Local Development
 
