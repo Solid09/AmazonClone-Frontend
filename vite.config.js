@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://localhost:3000",
+        target: "https://amazonclone-backend-1b2978a6efa7.herokuapp.com/",
         changeOrigin: true,
         secure: false,
       },
